@@ -47,3 +47,5 @@ printf("\nCANTIDAD TOTAL %d",cantidadtotal);
         else {
             printf ("\n PRECIO FINAL=%d" ,precio);
         }
+
+ 
