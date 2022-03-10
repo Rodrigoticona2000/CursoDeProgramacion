@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+int suma (int a, int b);
+int resta (int a, int b);
+int producto (int a, int b);
+float division (int a, int b);
+
+int main()
+{
+    int numero1;
+    int numero2;
+    
+    printf("ingrese el primer numero :");
+    scanf("%d",&numero1);
+    
+    printf("ingrese el segundo numero :");
+    scanf("%d",&numero2);
+    
+    //int suma = numero1 + numero2;
+    //int resta
+    //pow(2,3) = 2^3 = 2*2*2
+    //int producto = numero1 * numero2;
+    //float division = numero1 / numero2;
+    
+    int sumaDeDosNumeros = suma(numero1,numero2);
+    int restaDeDosNumeros =resta(numero1,numero2);
+    int productoDeDosNumeros =producto(numero1,numero2);
+    float divisionDeDosNumeros =division(numero1,numero2);
+    
+    printf("\nLa Suma de los 2 numeros ingresados es %d", sumaDeDosNumeros);
+    printf("\nLa Diferencia de los 2 numeros ingresadoses es %d", restaDeDosNumeros);
+    printf("\nEl Producto de 2 numeros ingresados es %d", productoDeDosNumeros);
+    printf ("\nLa division de 2 numeros ingresados es %.2f", divisionDeDosNumeros);
+    
+    return 0;
+} 
+
+//funcion INT SUMA (INT A, INT B)
+int suma (int a, int b){
+    
+    int suma = a + b;
+    return suma;
+}
+
+int resta(int a, int b){
+    int resta = a -b;
+    return resta;
+}
+int producto(int a, int b){
+    int producto = a * b;
+    return producto;
+}
+float division(int a, int b){
+    float division= a / b;
+    return division;
+}
