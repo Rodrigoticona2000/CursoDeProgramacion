@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main(){
+  	
+int matriz[3][3];
+    
+    
+for(int i = 0;i<=2;i++){
+printf("\nEstoy en la fila %d",i);
+for(int j = 0;j<=2;j++){
+printf("\nEstoy en la columna %d",j);
+printf("\nIngrese el dato en la fila %d y columna %d : ",i,j);
+scanf("%d",&matriz[i][j]);
+		}
+	}
+printf("\n\n");
+for(int i = 0;i<=2;i++){
+    for(int j = 0;j<=2;j++){
+      printf(" %d ",matriz[i][j]);
+        
+    
+}
+printf("\n");
+}      
+
+ return 0;
+}
+
